@@ -56,7 +56,7 @@ export default {
   },
   computed: {
     unmaskedPassword(): string {
-      const mask = createMask(this.password, [...this.lettersToShowCollection].join(' '));
+      const mask = createMask(this.password, [...this.lettersToShowCollection].sort((a, b) => a - b).join(' '));
 
       return getVisibleLetters(this.password, mask);
     },
