@@ -4,37 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .controls {
-        display: flex;
-        flex-direction: column;
-      }
-      .controls input {
-        width: 100%;
-      }
-    </style>
+
+    <link rel="stylesheet" href="./style.scss" />
   </head>
   <body>
-    <div class="controls">
-      <div class="controls__group">
-        <label for="password">Password</label>
-        <input id="password" type="text" name="password" />
-      </div>
-
-      <div class="controls__group">
-        <label for="mask">Mask</label>
-        <input id="mask" type="text" name="mask" placeholder="example: 1 2 3 5" />
-      </div>
-
-      <div class="controls__group">
-        <button type="button" id="mask-action" class="controls__button">mask password</button>
-      </div>
-
-      <div class="controls__group">
-        <h2>Your masked password:</h2>
-        <p id="result" class="controls__result"></p>
-      </div>
-    </div>
-    <script type="module" src="../src/index.ts"></script>
+    <div id="app"></div>
+    <script type="module" src="./createVueApp.ts"></script>
   </body>
 </html>

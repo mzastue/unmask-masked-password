@@ -10,6 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel": "^2.0.0-nightly.514"
+    "parcel": "^2.0.0-nightly.514",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.5",
+    "lost": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "postcss-url": "^10.1.1",
+    "sass": "^1.32.2"
   }
 }
